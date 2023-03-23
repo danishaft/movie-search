@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-App</title>
+    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="container">
+        <section id="banner" class=" w-screen relative overflow-x-hidden ">
+            <img src="images/image 36.png" alt="" class="w-full h-full">
+            <div class="header flex flex-wrap absolute w-full px-4 classic-padding inset-y-1/2 justify-between align-middle ">
+                <h1 class="text-2xl leading-4 font-black">Find your film</h1>
+                <a href="watch.html" class="text-xs leading-loose font-semibold">My Watchlist</a>
+            </div>
+        </section>
+        <section id="main" class="relative sm:w-screen">
+            <form id="search-form" class="w-full px-4 classic-padding absolute -top-4 sm:-top-6 lg:-top-8">
+                <div class="search-div w-full flex align-middle justify-between text-xs sm:text-base lg:text-lg rounded sm:rounded-lg lg:rounded-xl">
+                    <i class="fa-solid fa-magnifying-glass inline-block px-3 pt-3 sm:pt-4 lg:pt-6 lg:px-5 sm:px-4" style="columns: #9CA3AF;"></i>
+                    <input type="text" class="py-2 w-full" placeholder="Search..." id="search-input">
+                    <button type="submit" id="" class="justify-self-end h-full py-2 sm:py-3 lg:py-4 px-3 sm:px-7 rounded-r sm:rounded-r-lg lg:rounded-r-xl" >Search</button>
+                </div>
+            </form>
+           <div class="all-movies px-4  py-12 md:py-20 lg:py-24 classic-padding" id="main-movie-container">
+                <div class="placeholder flex justify-center py-4">
+                    <img src="images/Group 199.png" alt=" Start exploring" >
+                </div>
+               <!-- <article class="movie w-full flex justify-between py-4 sm:py-6">
+                    <div class="left">
+                        <img src="images/image 33.png" alt="" class="w-full h-full" >
+                    </div>
+                    <div class="right flex-col py-2 flex-wrap content-between">
+                        <div class="title flex align-middle">
+                            <h3 class="pr-2 lg:pr-4">Blade Runner</h3>
+                            <span class="rating smaller-text flex items-center"><i class="fa-solid fa-star pr-1"></i><p>8.1</p></span>
+                        </div>
+                        <div class="details flex smaller-text">
+                            <p>116 min</p>
+                            <p class="px-1 sm:px-2 md:px-3 lg:px-10 genres">Drama, Mystery, Sci-fi</p>
+                            <a href="#" class="flex items-center"><i class="fa-solid fa-circle-plus pr-1"></i><p>Watchlist</p></a>
+                        </div>
+                        <p class="description">
+                            A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator. 
+                        </p>
+                    </div>
+                </article>-->
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
